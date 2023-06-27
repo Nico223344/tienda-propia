@@ -1,0 +1,16 @@
+{% extends 'layouts_admin/base.html' %}
+{% block app %}
+
+{% include 'layouts_admin/_header.html' %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% include 'layouts_admin/_menu.html' %}
+        {% block contenido %}
+        {% endblock  %} 
+    </div>
+</div>
+
+
+
+{% endblock  %}
